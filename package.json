@@ -1,0 +1,22 @@
+{
+  "name": "scss-extras",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linmic/scss-extras.git"
+  },
+  "keywords": [
+    "scss"
+  ],
+  "author": "Linmic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linmic/scss-extras/issues"
+  },
+  "homepage": "https://github.com/linmic/scss-extras#readme"
+}
