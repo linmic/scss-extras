@@ -1,0 +1,30 @@
+@mixin text-clamp($line-height, $lines, $bg-color: $gray-f1f1f1) {
+  position: relative;
+  height: $line-height * $lines;
+  display: block;
+  overflow: hidden;
+
+  &::after {
+    /* content: '...'; */
+    content: '';
+    text-align: right;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    display: block;
+    position: absolute;
+    height: $line-height;
+    background: linear-gradient(to right, transparent, $bg-color 75%);
+  }
+
+  @supports (-webkit-line-clamp: 1) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    height: auto;
+
+    &::after {
+      display: none;
+    }
+  }
+}
