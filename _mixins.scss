@@ -1,11 +1,14 @@
-@mixin text-clamp($line-height, $lines, $bg-color: $gray-f1f1f1) {
+/*
+ * this is for cross-browser text-clamp
+ * working example: http://codepen.io/linmic/pen/iLoCv
+ */
+@mixin text-clamp($line-height, $lines, $bg-color: transparent) {
   position: relative;
   height: $line-height * $lines;
   display: block;
   overflow: hidden;
 
   &::after {
-    /* content: '...'; */
     content: '';
     text-align: right;
     bottom: 0;
